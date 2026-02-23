@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Caio Rodrigues</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">CAIO.DEV</a></div>
+        <i class="ph ph-list menu-toggle"></i>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html" class="active">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hidden" style="padding-top: 3rem;">
+            <h2 class="section-title" style="text-align: left;">Case Principal</h2>
+
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem;">FrotaCerta SaaS</h3>
+                        <p style="color: var(--accent);">Plataforma de inteligência financeira automotiva.</p>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://smart-fleet-production.up.railway.app/" target="_blank" class="btn" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Acessar <i class="ph ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                
+                <p>
+                    SaaS desenvolvido do zero para resolver dores reais de proprietários de veículos. Futuramente o sistema irá oferecer controle total sobre custos de manutenção, abastecimento e prevê gastos futuros através de análise de dados.
+                </p>
+
+                <div class="grid-2" style="gap: 1.5rem; margin-top: 2rem;">
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--accent);">Backend (API Restful)</h4>
+                        <ul style="list-style: disc; margin-left: 1.2rem; color: var(--text-muted); font-size: 0.95rem;">
+                            <li>Desenvolvido em <strong>Java 21</strong> e <strong>Spring Boot 3</strong>.</li>
+                            <li>Autenticação via <strong>JWT (Spring Security)</strong>.</li>
+                            <li>Integração com <strong>Stripe API</strong> para gestão de assinaturas e webhooks.</li>
+                            <li>Banco de dados <strong>PostgreSQL</strong>.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--accent);">Frontend (SPA)</h4>
+                        <ul style="list-style: disc; margin-left: 1.2rem; color: var(--text-muted); font-size: 0.95rem;">
+                            <li>Construído com <strong>Angular 21</strong> (Standalone Components).</li>
+                            <li>Visualização de dados complexos com <strong>Chart.js</strong>.</li>
+                            <li>Design responsivo e consumo de API tipado.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>Stripe</span>
+                    <span>Chart.js</span>
+                </div>
+            </div>
+
+            <h3 style="margin: 4rem 0 1.5rem 0;">Outros Experimentos</h3>
+            <div class="grid-2">
+                <a href="https://github.com/caiorodri/agendamento-veterinario" target="_blank">
+                    <div class="card" style="opacity: 0.8;">
+                        <h4>API Agendamento Veterinário</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0;">API REST para gerenciamento de agendamentos em clínicas veterinárias, desenvolvida em Java com Spring Boot e MySQL.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/caiorodri/android-agenpet" target="_blank">
+                    <div class="card" style="opacity: 0.8;">
+                        <h4>AgenPet</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0;">Aplicativo mobile nativo (Android) para gestão de clínicas veterinárias e saúde animal.</p>
+                        <div class="tech-stack">
+                            <span>Kotlin</span>
+                            <span>Android Studio</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Caio Rodrigues.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

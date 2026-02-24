@@ -235,6 +235,84 @@ main {
     to { transform: translateX(-50%); }
 }
 
+.radar-section {
+    padding: 2rem 0 4rem 0;
+}
+
+.radar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.radar-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.radar-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--text-muted);
+}
+
+.radar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.radar-header i {
+    font-size: 1.5rem;
+}
+
+.radar-header h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.radar-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.radar-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.radar-tags span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+    background: rgba(255,255,255,0.03);
+}
+
+.adopt {
+    border-top: 2px solid var(--accent);
+}
+
+.trial {
+    border-top: 2px solid var(--text-muted);
+    opacity: 0.9;
+}
+
+.assess {
+    border-top: 2px solid var(--border);
+    opacity: 0.7;
+}
+
 .timeline-section {
     padding: 4rem 0;
 }
@@ -451,6 +529,8 @@ footer {
     
     .profile-img { width: 220px; height: 220px; }
 
+    .radar-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    
     .timeline::after { left: 20px; }
     .container-t { width: 100%; padding-left: 50px; padding-right: 10px; margin-bottom: 1rem; }
     .container-t::after { left: 10px; top: 24px; }
